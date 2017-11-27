@@ -9,6 +9,7 @@ alias ssh='if [ "$(ssh-add -l)" = "The agent has no identities." ]; then ssh-add
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 alias diff="colordiff"
 alias sl="fortune"
+alias rssh="ssh pi@carlson2.local"
 
 [ -z "$PS1" ] && return
 function updateSetup() {
@@ -173,6 +174,4 @@ shopt -s checkwinsize
 ## set ctrl-w to delete last short-word
 stty werase undef
 bind '\C-w:unix-filename-rubout'
-
-alias rssh="ssh pi@carlson2.local"
 
