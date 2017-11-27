@@ -174,3 +174,5 @@ shopt -s checkwinsize
 stty werase undef
 bind '\C-w:unix-filename-rubout'
 
+alias rssh="ssh pi@carlson2.local"
+
