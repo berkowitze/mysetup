@@ -18,12 +18,5 @@ set expandtab
 autocmd FileType html  setlocal shiftwidth=2 tabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 
-" just to get used to hjkl
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+set pastetoggle=<F10>
+
