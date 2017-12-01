@@ -7,6 +7,9 @@ brew install vim
 brew install python
 brew install fortune
 brew install coreutils
+brew install ocaml
+brew install opam
+brew install ledit
 brew install wget
 brew install tldr
 brew install tree
