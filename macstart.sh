@@ -5,12 +5,15 @@ echo "Installing bash, vim, python, coreutils, ..."
 brew install bash
 brew install vim
 brew install python
+brew install fortune
 brew install coreutils
 brew install wget
 brew install tldr
 brew install tree
 brew install hub
 brew install cask
+brew cask install osxfuse
+brew install sshfs
 brew install colordiff
 brew tap caskroom/versions
 brew unlink python && brew link python
@@ -24,6 +27,9 @@ chsh -s /usr/local/bin/bash $USER
 echo "Installing matplotlib, ipython, numpy, scipy..."
 pip install matplotlib ipython numpy scipy flask
 
+echo "Setting up fuse/sshfs..."
+mkdir $HOME/mcs
+
 mkdir $HOME/.dircolors
 git clone https://github.com/gibbling666/dircolors.git $HOME/.dircolors
 echo "Colors set up..."
@@ -34,7 +40,7 @@ cp .bashrc $HOME/
 cp -r .vim $HOME/
 cp .vimrc $HOME/
 
-cp .git_config $HOME/
+cp .gitconfig $HOME/
 echo "Files copied..."
 ipython -c "import matplotlib, scipy, numpy"
 echo "Python & iPython installation complete..."
@@ -54,6 +60,17 @@ brew cask install google-chrome &>/dev/null
 echo "Installing SizeUp..."
 brew cask install sizeup &>/dev/null
 
+echo "Installing TeamViewer..."
+brew cask install teamviewer &>/dev/null
+
+echo "Installing Bartender..."
+brew cask install bartender &>/dev/null
+
+echo "Installing Alfred..."
+brew cask install alfred &>/dev/null
+
+echo "Installing InsomniaX..."
+brew cask install insomniax &>/dev/null
 echo "Downloading bakery..."
 mkdir $HOME/explosive-bakery
 git clone https://github.com/IzzyBrand/explosive-bakery $HOME/explosive-bakery
@@ -181,11 +198,14 @@ else
 	echo colordiff not installed;
 fi;
 
+# set update interval to 30 days
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 30
+
 bash maccheck.sh
 
 
 echo "Remember to setup:"
 echo "1. Brown SSH"
 echo "2. Set .txt default to Sublime"
-echo "3. Get SizeUp License Going (https://mail.google.com/mail/u/0/#search/in%3Aanywhere+irradiated)"
+echo "3. Get SizeUp License Going (http://www.irradiatedsoftware.com/orders/LicenseLookup.php?product=SizeUp&id=23M58072SY2181539)"
 echo "4. Get SizeUp configured"

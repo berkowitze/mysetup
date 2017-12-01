@@ -1,3 +1,6 @@
+" jk doesn't go down a line for a random reason
+inoremap jk <C-[>
+
 " basic setup stuff
 inoremap jk <ESC> 
 set mouse=a
@@ -18,5 +21,6 @@ set expandtab
 autocmd FileType html  setlocal shiftwidth=2 tabstop=2
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 
+" f10 toggles pasting mode
 set pastetoggle=<F10>
 

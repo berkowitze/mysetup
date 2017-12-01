@@ -13,6 +13,13 @@ else
     echo Sublime Not Installed;
 fi
 
+if [[ -d /Applications/InsomniaX.app ]];
+then
+    echo Insomnia Installed;
+else
+    echo Insomnia Not Installed;
+fi
+
 if [[ -d /Applications/TeamViewer.app ]];
 then
     echo TeamViewer Installed;
@@ -45,79 +52,72 @@ ipython -c "import matplotlib, scipy, numpy, flask; print \"Python Good\""
 
 if brew ls --versions bash > /dev/null;
 then
-	echo bash installed;
+	echo bash Installed;
 else
-	echo bash not installed;
+	echo bash Not Installed;
 fi;
 
 if brew ls --versions vim > /dev/null;
 then
-	echo vim installed;
+	echo vim Installed;
 else
-	echo vim not installed;
+	echo vim Not Installed;
 fi;
 
 if brew ls --versions python > /dev/null;
 then
-	echo python installed;
+	echo python Installed;
 else
-	echo python not installed;
+	echo python Not Installed;
 fi;
 
 if brew ls --versions coreutils > /dev/null;
 then
-	echo coreutils installed;
+	echo coreutils Installed;
 else
-	echo coreutils not installed;
+	echo coreutils Not Installed;
 fi;
 
 if brew ls --versions wget > /dev/null;
 then
-	echo wget installed;
+	echo wget Installed;
 else
-	echo wget not installed;
+	echo wget Not Installed;
 fi;
 
 if brew ls --versions tldr > /dev/null;
 then
-	echo tldr installed;
+	echo tldr Installed;
 else
-	echo tldr not installed;
+	echo tldr Not Installed;
 fi;
 
 if brew ls --versions tree > /dev/null;
 then
-	echo tree installed;
+	echo tree Installed;
 else
-	echo tree not installed;
+	echo tree Not Installed;
 fi;
 
 if brew ls --versions hub > /dev/null;
 then
-	echo hub installed;
+	echo hub Installed;
 else
-	echo hub not installed;
+	echo hub Not Installed;
 fi;
 
 if brew ls --versions cask > /dev/null;
 then
-	echo cask installed;
+	echo cask Installed;
 else
-	echo cask not installed;
-fi;
-
-if brew ls --versions caskroom/cask/brew-cask > /dev/null;
-then
-	echo caskroom/cask/brew-cask installed;
-else
-	echo caskroom/cask/brew-cask not installed;
+	echo cask Not Installed;
 fi;
 
 if brew ls --versions colordiff > /dev/null;
 then
-	echo colordiff installed;
+	echo colordiff Installed;
 else
-	echo colordiff not installed;
+	echo colordiff Not Installed;
 fi;
 
 
