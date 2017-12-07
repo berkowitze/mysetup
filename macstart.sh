@@ -15,6 +15,7 @@ brew install tldr
 brew install tree
 brew install hub
 brew install cask
+brew install ffmpeg
 brew cask install osxfuse
 brew install sshfs
 brew install colordiff
