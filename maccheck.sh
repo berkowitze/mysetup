@@ -13,6 +13,13 @@ else
     echo Sublime Not Installed;
 fi
 
+if [[ -d /Applications/Calibre.app ]];
+then
+    echo Calibre Installed;
+else
+    echo Calibre Not Installed;
+fi
+
 if [[ -d /Applications/InsomniaX.app ]];
 then
     echo Insomnia Installed;

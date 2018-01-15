@@ -14,6 +14,7 @@ brew install wget
 brew install tldr
 brew install tree
 brew install hub
+brew install npm
 brew install cask
 brew install ffmpeg
 brew cask install osxfuse
@@ -58,6 +59,9 @@ brew cask install iterm2 &>/dev/null
 echo "Installing Flux..."
 brew cask install flux &>/dev/null
 
+echo "Installing Flux..."
+brew cask install calibre &>/dev/null
+
 echo "Installing Chrome..."
 brew cask install google-chrome &>/dev/null
 
@@ -66,6 +70,9 @@ brew cask install sizeup &>/dev/null
 
 echo "Installing TeamViewer..."
 brew cask install teamviewer &>/dev/null
+
+echo "Installing VLC..."
+brew cask install vlc &>/dev/null
 
 echo "Installing Bartender..."
 brew cask install bartender &>/dev/null
